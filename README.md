@@ -1,1 +1,9 @@
-# project-1---Gallery
+#### Gallery \ Slider project
+
+➖ HTML
+➖ CSS
+➖ JS
+
+📷 all images from [Unsplash]: https://unsplash.com/
+
+
