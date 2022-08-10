@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden;
+    background-color: #465945;
+}
+
+.visually-hidden {
+    position: absolute;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.slide {
+    position: relative;
+    flex: 1;
+    margin: 10px;
+    border-radius: 20px;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.slide--first {
+    background-image: url('https://images.unsplash.com/photo-1601753245909-8471d0272e8a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1422&q=80');
+}
+
+.slide--second {
+    background-image: url('https://images.unsplash.com/photo-1564070814872-a2e801dbf413?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+}
+
+.slide--third {
+    background-image: url('https://images.unsplash.com/photo-1490349368154-73de9c9bc37c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+}
+
+.slide--fourth {
+    background-image: url('https://images.unsplash.com/photo-1546454272-5914d75c01e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+}
+
+.slide--fifth {
+    background-image: url('https://images.unsplash.com/photo-1510520745063-ceaa7314a820?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80');
+}
+
+.slide__title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 24px;
+    opacity: 0;
+    color: #fff;
+}
+
+.slide.active {
+    flex: 10;
+}
+
+.slide.active>.slide__title {
+    padding: 3px 25px;
+    background-image: url('./img/img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
