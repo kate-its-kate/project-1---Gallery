@@ -83,7 +83,7 @@ body {
 }
 
 .slide.active>.slide__title {
-    padding: 3px 25px;
+    padding: 3px 35px;
     background-image: url('./img/img.png');
     background-size: cover;
     background-repeat: no-repeat;
